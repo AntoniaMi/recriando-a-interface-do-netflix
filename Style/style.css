@@ -1,0 +1,107 @@
+/*Slytherin colors*/
+:root {
+  --verde: #1a472a;
+  --preto: #000000;
+  --cinza: #aaaaaa;
+}
+
+/*To the hole page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preto);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+/*Title and other stuff*/
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--verde);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--cinza);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #ffff;
+}
+
+/*The main movie*/
+.movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) 100%),
+    url("/img/capa.jpg");
+  height: 640px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.movie .synopsis {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.movie .nobody {
+  margin-top: 30%;
+  font-size: 35px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.butto {
+  background-color: rgba(0, 0, 0, 50);
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  margin-right: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 1s ease all;
+  border-radius: 5%;
+}
+
+.butto:hover {
+  background-color: white;
+  color: black;
+}
+
+.butto i {
+  margin-right: 5px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.movie .container {
+  width: 70%;
+}
+
+.box-anime {
+  height: 50%;
+  width: 50%;
+  flex: block;
+}
+
+.carrosel-anime {
+  margin-top: 5px;
+}
